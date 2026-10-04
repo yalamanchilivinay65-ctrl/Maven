@@ -1,0 +1,28 @@
+---
+services:
+  sports:
+    container-name: cont1
+    image: ysv26/sports-ticket-app:latest
+    ports:
+      - "1011:80"
+    deploy:
+      resources:
+        reservations:
+          cpus: "0.5"
+          memory: 100M
+        limits:
+          cpus: "1"
+          memory: 200M
+  house:
+    container-name: cont2
+    image: ysv26/house-searching-app:latest
+    ports:
+      - "1012:80"
+    deploy:
+      resources:
+        reservations:
+          cpus: "0.5"
+          memory: 100M
+        limits:
+          cpus: "1"
+          memory: 200M
