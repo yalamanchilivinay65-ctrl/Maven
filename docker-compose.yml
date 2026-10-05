@@ -1,7 +1,7 @@
 ---
 services:
   sports:
-    container-name: cont1
+    container_name: cont1
     image: ysv26/sports-ticket-app:latest
     ports:
       - "1011:80"
@@ -14,7 +14,7 @@ services:
           cpus: "1"
           memory: 200M
   house:
-    container-name: cont2
+    container_name: cont2
     image: ysv26/house-searching-app:latest
     ports:
       - "1012:80"
